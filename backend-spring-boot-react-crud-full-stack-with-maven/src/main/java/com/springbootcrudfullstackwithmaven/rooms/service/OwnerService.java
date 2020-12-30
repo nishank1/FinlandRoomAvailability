@@ -1,7 +1,7 @@
 package com.springbootcrudfullstackwithmaven.rooms.service;
 
 import com.springbootcrudfullstackwithmaven.rooms.model.Owner;
-import com.springbootcrudfullstackwithmaven.rooms.repository.OwnerRepository;
+import com.springbootcrudfullstackwithmaven.rooms.repository.OwnRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class OwnerService {
 
     @Autowired
-    private OwnerRepository ownerRepository;
+    private OwnRepository ownerRepository;
 
     public List<Owner> getAllOwners() {
         List<Owner> owners = ownerRepository.findAll();
